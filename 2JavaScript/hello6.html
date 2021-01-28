@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "ja">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Hello!</title>
+    <style>
+      body { font-size:16pt; font-weight:bold; }
+      h1 { color:white; padding:5px; font-size:24pt; background-color:red; }
+      .gu { color :red; }
+      .choki { color: blue; }
+      .pa { color:green; }
+    </style>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <script>
+      var te = "パー";
+      switch (te){
+        case "グー":
+          document.write('私は<span class = "pa">パー</span>。私の勝ちです。');
+          break;
+        case "チョキ":
+          document.write('私は<span class = "gu">グー</span>。私の勝ちです。');
+          break;
+        case "パー":
+          document.write('私は<span class = "choki">チョキ</span>。私の勝ちです。');
+          break;
+        default:
+          document.write("ちょっとよくわかりません...");
+      }
+    </script>
+  </body>
+</html>

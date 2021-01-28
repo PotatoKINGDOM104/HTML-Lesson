@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "ja">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Hello!</title>
+    <style>
+      body { font-size:16pt; font-weight:bold; }
+      h1 { color:white; padding:5px; font-size:24pt; background-color:red; }
+    </style>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <script>
+      var data = [ 98, 67, 81, 59,76 ];
+      var total = 0;
+      for ( var i = 0; i < 5 ; i++ ){
+        total += data[i];
+      }
+      document.write("合計は"+ total + "、平均は、" + (total / 5 ));
+    </script>
+  </body>
+</html>

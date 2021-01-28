@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang ="ja">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Hello!</title>
+    <link rel = "stylesheet" href = "hello12.css">
+    <style>
+      h1 { 
+        color:white;
+        background-color:blueviolet;
+        font-weight:bold;
+        font-style:italic;
+        font-size:120px;
+        }
+      h2 {
+        background-color:aqua;
+        font-size:40px;
+      }
+      #middle {
+        color:aquamarine;
+        font-weight:bold;
+      }
+      .s {
+        color:brown;
+        font-size:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello HTML</h1>
+    <p>HTMLの復習項目<br>
+    オリジナルHTML</p>
+
+    <h2>画像の表示</h2>
+    <img src = "Sunset.jpg" width = "300px" height = "200px">
+
+    <h2>ハイパーリンク</h2>
+    <p>Googleのサイトにジャンプします</p>
+    <p><a href = "http://google.co.jp">Googleサイトへ</a></p>
+
+    <h2>テーブル</h2>
+    <p>テーブルを表示します</p>
+    <table border = "1">
+      <tr>
+        <th>No.</th><th>勉強項目</th>
+      </tr>
+      <tr>
+        <td>1-1</td><td>HTMLのテキスト表示</td>
+      </tr>
+      <tr>
+        <td>1-2</td><td>小見出しをつくる</td>
+      </tr>
+      <tr>
+        <td>1-3</td><td>改行できない例</td>
+      </tr>
+      <tr>
+        <td>1-4</td><td>改行の仕方</td>
+      </tr>
+      <tr>
+        <td>1-5</td><td>HTML5での書き方</td>
+      </tr>
+      <tr>
+        <td>1-6</td><td>画像の表示</td>
+      </tr>
+      <tr>
+        <td>1-7</td><td>リンクの貼り方</td>
+      </tr>
+      <tr>
+        <td>1-8</td><td>テーブルの作り方</td>
+      </tr>
+      <tr>
+        <td>1-9</td><td>直接スタイル：文字色</td>
+      </tr>
+      <tr>
+        <td>1-10</td><td>直接スタイル：背景色</td>
+      </tr>
+      <tr>
+        <td>1-11</td><td>headスタイル</td>
+      </tr>
+      <tr>
+        <td>1-12</td><td>cssファイル</td>
+      </tr>
+      <tr>
+        <td>1-13</td><td>cssファイル読込</td>
+      </tr>
+      <tr>
+        <td>1-14</td><td>IDでスタイル指定</td>
+      </tr>
+      <tr>
+        <td>1-15</td><td>クラスでスタイル指定</td>
+      </tr>
+      <tr>
+        <td>1-16</td><td>スタイルdiv範囲指定</td>
+      </tr>
+      <tr>
+        <td>1-17</td><td>スタイルdiv一部指定</td>
+      </tr>
+      <tr>
+        <td>1-18</td><td>スタイルspan一部指定</td>
+      </tr>
+      <tr>
+        <td>1-19</td><td>スタイルフォント指定</td>
+      </tr>
+      <tr>
+        <td>1-20</td><td>スタイル余白指定</td>
+      </tr>
+      <tr>
+        <td>1-21</td><td>スタイル位置指定relative</td>
+      </tr>
+      <tr>
+        <td>1-22</td><td>スタイル位置指定absolute</td>
+      </tr>
+    </table>
+
+    <h2>直接スタイル</h2>
+    <p style = "color:red;background-color:blue;">文字色、背景色の変更</p>
+
+    <h2>IDスタイル指定</h2>
+    <p id = "middle">IDでスタイルを指定</p>
+
+    <h2>クラススタイル指定</h2>
+    <p class = "s">クラスでスタイルを指定</p>
+
+    <h2>divスタイル指定</h2>
+    <p>スタイル範囲外</p>
+    <div class = "s">
+      <p>divでスタイルの範囲を指定</p>
+      <p>ここまでスタイル範囲内</p>
+    </div>
+    <p>スタイル範囲外</p>
+
+    <p>divで<div class = "s">一部分だけ</div>をスタイル指定した場合、ブロック要素のため改行してしまう</p>
+
+    <h2>spanスタイル指定</h2>
+    <p>spanで<span class = "s">一部分だけ</span>をスタイル指定した場合、インライン要素のため改行はしない</p>
+
+    <h2>フォントスタイル指定</h2>
+    <p style = "font-family:Impact; font-size:30px; font-weight:bold;">フォントの種類とサイズ、太文字に変更</p>
+
+    <h2>余白の調整</h2>
+    <p style = "background-color:red; padding:20px;">padding20pxで行幅を指定</p>
+    <p style = "background-color:red; padding:40px;">padding40pxで行幅を指定</p>
+    <p style = "color:white; background-color:blue; margin:30px;">margin30pxで行間を指定</p>
+    <p style = "color:white; background-color:blue; margin:60px;">margin60pxで行間を指定</p>
+
+    <h2>位置の調整</h2>
+    <p style = "position:relative; left:0px; top:0px;">relativeで相対的に100px</p>
+    <p style = "position:relative; left:100px; top:0px;">relativeで相対的に100px</p>
+    <p style = "position:relative; left:0px; top:100px;">relativeで相対的に100px</p>
+    <p style = "position:relative; left:100px; top:100px;">relativeで相対的に100px</p>
+
+    <p style = "position:absolute; left:100px; top:3800px;">absoluteで絶対座標で指定</p>
+    <p style = "position:absolute; left:600px; top:3800px;">absoluteで絶対座標で指定</p>
+    <p style = "position:absolute; left:100px; top:3900px;">absoluteで絶対座標で指定</p>
+    <p style = "position:absolute; left:600px; top:3900px;">absoluteで絶対座標で指定</p>
+
+   </body>
+</html>
