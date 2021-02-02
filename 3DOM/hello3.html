@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang = "ja">
+<head>
+    <meta charset = "UTF-8">
+    <title>Hello!</title>
+    <style>
+        body { font-size:14pt; font-weight: plain; }
+        h1 { color:white; padding:5px; font-size:24pt; background-color:red; }
+    </style>
+    <script>
+        function clickNow() {
+            var msg = document.querySelector('#msg');
+            msg.textContent = "クリックしたね！！！";
+        }
+    </script>
+</head>
+<body>
+    <h1 id = "title" >Hello!</h1>
+    <p id = "msg" >ボタンをクリックしてください。</p>
+    <button onclick = "clickNow();">Click</button>
+</body>
+</html>
